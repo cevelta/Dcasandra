@@ -1,0 +1,55 @@
+body 
+{
+	border: 2px solid red;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+header {
+	border: 2px solid blue;
+	padding: 15px;
+	grid-column:1/7;
+	grid-row: 1/2;
+
+}
+
+main {
+	border: 2px solid gray;
+	padding: 15px;
+	grid-column:1/7;
+	grid-row: 2/5;
+
+
+}
+footer {
+	border: 2px solid pink;
+	padding: 15px;
+	grid-column:1/7;
+	grid-row: 5/6;
+}
+
+nav>ul{
+	border: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+
+
+nav>ul>li{
+	border: none;
+	border-radius: 9px 9px;
+	border: 2px orange solid;
+	display: flex;
+	flex-direction: row;
+	padding: 4px;
+
+}
+
+main>dl{
+	display: flex;
+	align-content: center;
+
+}
