@@ -1,55 +1,144 @@
 body 
 {
-	border: 2px solid red;
+
 	display: grid;
 	grid-template-columns: repeat(6,1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	margin: 10px gray;
 }
-header {
-	border: 2px solid blue;
-	padding: 15px;
+
+header{
+	/*  border: solid 5px red;   */
 	grid-column:1/7;
 	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	background-color: #B2AAAA;
 
 }
+
+.logo{
+	padding: 5px;
+	margin: 5px; 
+	height:250px;
+	width: 250px;
+	max-height:250px;
+	max-width: 250px;
+
+}
+
+
 
 main {
 	border: 2px solid gray;
-	padding: 15px;
+	padding: 3px;
 	grid-column:1/7;
-	grid-row: 2/5;
+	grid-row: 2/6;
 
 
 }
 footer {
-	border: 2px solid pink;
-	padding: 15px;
+	background-color: #B2AAAA;
+	font-size: 15px;
+	border: solid gray 10px;
 	grid-column:1/7;
-	grid-row: 5/6;
+	grid-row: 5;
+	display: flex;
+	padding:10px;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	
+
 }
 
-nav>ul{
-	border: 2px solid black;
+
+
+.nombre-corporativo {
+   /* border: 2px solid #E0F05D;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nom-corp {
+    align-self: center;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.nav>ul{
+	font-size: 25px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 
-
-
-nav>ul>li{
+.nav>ul>li{
 	border: none;
-	border-radius: 9px 9px;
-	border: 2px orange solid;
+	background-color: #DDB922;
+  	padding: 10px;
+  	margin: 5px;
+    border-radius: 50px 20px;
+    border: 7px gray solid;
 	display: flex;
 	flex-direction: row;
-	padding: 4px;
+}
+
+
+
+main>div{
+	margin: 10px;
+    padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 
 }
 
-main>dl{
+
+.container {
+	font-size: 90px;
+	font-style: italic;
+	font-family: font-kerning;
+	position: relative;
+  text-align: center;
+  color: #F4F478;
+} 
+  
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.redes{
 	display: flex;
-	align-content: center;
+	padding: 10px;
+	align-self: flex-end;
+	margin: 10px;
+	font-size: 10px;
+
+}
+
+
+.fondo{
+	padding: 100px;
+	margin: 110px;
+}
+
+.texto{
+	font-size: 25px;
+}
+
+.Politicas{
+	
+	display: flex;
+	flex-direction: row;
 
 }
