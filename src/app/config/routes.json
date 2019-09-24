@@ -1,0 +1,68 @@
+{
+	"index": {
+		"controller" : "HomeController",
+		"action": "indexAction",
+		"module": "home"
+	},
+	"/": {
+		"controller" : "HomeController",
+		"action": "indexAction",
+		"module": "home"
+	},
+
+		"": {
+		"controller" : "HomeController",
+		"action": "indexAction",
+		"module": "home"
+	},
+
+	"home": {
+		"controller": "HomeController",
+		"action": "indexAction",
+		"module": "home"
+	},
+
+	"anillo" : {
+		"controller": "AnilloController",
+		"action": "indexAction",
+		"module": "anillo"
+	},
+
+	"pulsera" :{
+		"controller": "PulseraController",
+		"action": "indexAction",
+		"module": "pulsera"
+	},
+
+	"producto" :{
+		"controller": "ProductoController",
+		"action": "indexAction",
+		"module": "producto"
+	},
+
+	"contacto" :{
+		"controller": "ContactoController",
+		"action": "index",
+		"module": "contacto"
+	},
+
+
+	"ajax/contact" :{
+		"controller": "ContactoController",
+		"action": "processContactAjax",
+		"module": "contacto"
+	},
+
+
+	"404" : {
+		"controller": "ErrorController",
+		"action": "indexAction",
+		"module": "error"
+	},
+
+	"error": {
+		"controller": "ErrorController",
+		"action": "indexAction",
+		"module": "error"
+	}
+}
