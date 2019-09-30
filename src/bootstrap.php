@@ -80,7 +80,7 @@ if (defined("CONFIG_DIR")){
     require_once __DIR__.'/../vendor/autoload.php';
 
     // Definición de la clase que representará la aplicación
-	if (array_key_exists('app', $GLOBALS['config'])){
+	/*if (array_key_exists('app', $GLOBALS['config'])){
 		$application = ((string)($GLOBALS['config']['app']['front']['namespace'])).((string)($GLOBALS['config']['app']['front']['class']));
 
 		// Se define la constantes APP
@@ -107,4 +107,28 @@ if (defined("CONFIG_DIR")){
 			unset($DB_USER);
 			unset($DB_PASS);
 		}
+
+
+		*/
+
+
+$host = 'localhost';
+$schema = 'mydb';
+$user = 'app';
+$password = 'secret';
+$port = 3306;
+
+$GLOBALS['db'] = new PDO('mysql:host='.$host.';dbname='.$schema, $user, $password);
+define ("BD", $GLOBALS['db']);
+
+
+foreach ($GLOBALS['db']->query('SELECT categoria FROM Categoria') as $fila) {
+		print_r($fila);
+}
+
+
+
+}
+
+
 	}
